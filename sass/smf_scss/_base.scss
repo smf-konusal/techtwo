@@ -1,0 +1,69 @@
+/* Index */
+html {
+	background: var(--color-default);
+}
+body {
+	background: var(--color-secondary);
+	font: 83.33%/150% "Segoe UI", "Helvetica Neue", "Nimbus Sans L", Arial, "Liberation Sans", sans-serif;
+	color: var(--color-base);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+::selection {
+	text-shadow: none;
+	background: var(--color-primary);
+	color: var(--color-base);
+}
+/* This is about links */
+a, a:visited {
+	color: var(--color-techtwo-border);
+	text-decoration: none;
+}
+/* Standard horizontal rule.. ([hr], etc.) */
+hr {
+	border: none;
+	margin: 12px 0;
+	height: 2px;
+	background: #fff;
+	box-shadow: 0 1px 0 #bbb inset;
+}
+strong, .strong {
+	font-weight: bold;
+	color: var(--color-base);
+}
+.cat_bar strong {
+	color: #fff;
+}
+input, button, select {
+	padding: 0 0.4em;
+	height: 1.6em;
+	line-height: 1.6em;
+}
+select {
+	padding: 0.22em 0.2em; /* selects don't apply line-height */
+}
+
+input, button, select, textarea {
+	color: #222;
+	font: 83.33%/150% "Segoe UI", "Helvetica Neue", "Nimbus Sans L", Arial, "Liberation Sans", sans-serif;
+	background: #fff;
+	outline: none;
+	border: 1px solid #bbb;
+	vertical-align: middle;
+	border-radius: 3px;
+	box-shadow: 1px 2px 1px rgba(160, 187, 221, 0.2) inset;
+	padding: 0.1em 0.2em;
+}
+input:hover, textarea:hover, button:hover, select:hover {
+	outline: none;
+	border-color: #82a2bc;
+}
+textarea:hover {
+	background: #fbfbfb;
+}
+input:focus, textarea:focus, button:focus, select:focus {
+	outline: none;
+	border-color: #7fb0d8;
+	background: #fff;
+}
